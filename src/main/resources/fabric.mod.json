@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "RainMiner",
+  "version": "${version}",
+  "name": "RainMiner",
+  "description": "A bukkit compatible excavator mod.",
+  "authors": [
+    "AmemiyaShigure"
+  ],
+  "contact": {
+    "repo": "https://github.com/AmemiyaSigure/RainMiner"
+  },
+  "license": "MIT",
+  "icon": "assets/RainMiner/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cx.rain.mc.fabric.rainminer.client.RainMinerClient"
+    ],
+    "main": [
+      "cx.rain.mc.fabric.rainminer.RainMiner"
+    ]
+  },
+  "mixins": [
+    "RainMiner.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.5+build.213",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
